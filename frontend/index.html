@@ -1,0 +1,35 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Bedrock Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="">
+    <div class="chat-container">
+        <header class="chat-header">
+            <h1>🤖 Bedrock Chat</h1>
+            <p>Powered by Amazon Bedrock</p>
+            <button id="new-session-btn" title="New Chat">+ New Chat</button>
+        </header>
+        
+        <div class="chat-messages" id="chat-messages">
+            <div class="message assistant">
+                <div class="message-content">
+                    Hello! I'm an AI assistant powered by Amazon Bedrock. How can I help you today?
+                </div>
+            </div>
+        </div>
+        
+        <div class="chat-input-area">
+            <textarea id="user-input" placeholder="Type your message..." rows="1" autofocus=""></textarea>
+            <button id="send-btn" title="Send">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+
+
+</body></html>
